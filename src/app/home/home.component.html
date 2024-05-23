@@ -1,0 +1,9 @@
+<section class="result">
+    <form>
+        <div [contentEditable]="isEditable">change me</div>
+        <input type="text" placeholder="Filter by city" />
+        <span>Name: </span>{{name}}
+        <button class="primary" type="button" (click)="handleSubmit()">Search</button>
+        <button type="button">annuler</button>
+    </form>
+</section>

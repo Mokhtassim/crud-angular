@@ -1,0 +1,18 @@
+div {
+    width: 100%;
+
+    table {
+        .mat-mdc-header-cell {
+            color: rgb(33, 43, 53);
+            font-weight: 700;
+            font-size: 1em;
+            background-color: #EEEEEE;
+        }
+    }
+
+    .mat-mdc-paginator {
+        .mat-mdc-select-value {
+            padding: 0.5rem;
+        }
+    }
+}
