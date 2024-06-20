@@ -14,3 +14,8 @@ export interface Pageable {
   page: number;
   size: number;
 }
+
+export interface Links {
+  label: string;
+  link: string;
+}
