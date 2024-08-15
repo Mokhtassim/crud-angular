@@ -1,8 +1,8 @@
 export interface Product {
-  id: number;
-  name: string;
-  price: number;
-  tva: number;
+  id?: number;
+  name?: string;
+  price?: number;
+  tva?: number;
 }
 
 export interface ResponseProducts {

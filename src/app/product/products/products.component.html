@@ -30,7 +30,7 @@
     <tr mat-header-row *matHeaderRowDef="columnsProcduct"></tr>
     <tr mat-row *matRowDef="let row; columns: columnsProcduct;"></tr>
   </table>
-  <mat-paginator [length]="totalElements" [pageSizeOptions]="[2, 4, 6]" showFirstLastButtons
+  <mat-paginator [length]="totalElements" [pageSizeOptions]="[2]" showFirstLastButtons
     (page)="onChangePageable($event)">
   </mat-paginator>
 

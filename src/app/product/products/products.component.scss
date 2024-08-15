@@ -10,9 +10,7 @@ div {
         }
     }
 
-    .mat-mdc-paginator {
-        .mat-mdc-select-value {
-            padding: 0.5rem;
-        }
+    ::ng-deep .mat-mdc-paginator-outer-container .mat-mdc-paginator-container {
+        justify-content: space-between;
     }
 }

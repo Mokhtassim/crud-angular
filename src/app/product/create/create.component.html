@@ -1,8 +1,13 @@
-    <h2 mat-dialog-title>Delete file</h2>
+    <h2 mat-dialog-title>Add Product</h2>
     <mat-dialog-content class=”mat-typography”>
-        Would you like to delete cat.jpeg?
+        <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+            <label for="name">Name</label>
+            <input id="name" type="text" formControlName="name"/>
+            <label for="price">Price</label>
+            <input id="price" type="number" formControlName="price"/>
+        </form>
     </mat-dialog-content>
     <mat-dialog-actions>
-        <button mat-button (click)="onNoClick()">No</button>
-        <button mat-button mat-dialog-close cdkFocusInitial>Ok</button>
+        <button mat-button mat-dialog-close cdkFocusInitial>Close</button>
+        <button mat-button (click)="onSubmit()" type="submit">Save</button>
     </mat-dialog-actions>

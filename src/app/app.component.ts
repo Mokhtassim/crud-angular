@@ -45,6 +45,7 @@ export class AppComponent {
       disableClose: true,
       backdropClass: 'backdrop-custom-class',
       hasBackdrop: true,
+      panelClass: 'full-screen-dialog',
     });
 
     dialogRef.afterClosed().subscribe(result => {
